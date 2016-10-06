@@ -13,7 +13,7 @@
           url: 'http://swapi.co/api/species/'
         }).then(function(response){
           species.data = response.data.results;
-          console.log(planets.data)
+          console.log(specie.data)
         })
     }
 
