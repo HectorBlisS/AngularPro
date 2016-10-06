@@ -16,6 +16,9 @@
             .when('/characters',{
                 template:`<h1>Characters</h1>`
             })
+            .when('/specie',{
+                template:`<specie-componet></specie-componet>`
+            })
             .otherwise({
                 redirectTo:('/')
             });
