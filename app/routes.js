@@ -23,13 +23,8 @@
             .when('/starships', {
                 template: `<star-component></star-component>`
             })
-<<<<<<< HEAD
-            .when('/characters',{
-                template:`<people-component></people-component>`
-=======
             .when('/films', {
                 template: `<films-component></films-component>`
->>>>>>> f58fa020427f5bbb334a4ad3e5966f3fe448a1f4
             })
             .otherwise({
                 redirectTo: ('/')
