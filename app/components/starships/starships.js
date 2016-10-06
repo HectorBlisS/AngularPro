@@ -4,8 +4,15 @@
 		controller:StarController,
 		templateUrl:'app/components/starships/starships.html'
 	}
-	function StarController(){
-		let star = this;
+	function StarController($http){
+		let stars = this;
+		$http({ 
+			method:'GET',
+			url:'http://swapi.co/api/starships/'
+		}).then(function(response){
+			stars.data = response.data.results;
+			console.log(stars.data)
+		})
 	}
 
 	angular
