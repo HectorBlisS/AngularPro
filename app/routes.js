@@ -15,16 +15,19 @@
                 template: `<planet-componet></planet-componet>`
             })
             .when('/characters', {
-                template: `<h1>Characters</h1>`
+                template: `<people-component></people-component>`
             })
             .when('/species', {
-                template: `<species-componet></species-componet>`
+                template: `<specie-componet></specie-componet>`
             })
             .when('/starships', {
                 template: `<star-component></star-component>`
             })
             .when('/films', {
                 template: `<films-component></films-component>`
+            })
+            .when('/vehicles',{
+                template:`<vehicle-componet></vehicle-componet>`
             })
             .otherwise({
                 redirectTo: ('/')
