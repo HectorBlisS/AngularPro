@@ -6,7 +6,7 @@
 	}
 	function StarController($http){
 		let stars = this;
-		$http({ 
+		$http({
 			method:'GET',
 			url:'http://swapi.co/api/starships/'
 		}).then(function(response){

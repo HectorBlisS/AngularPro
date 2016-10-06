@@ -17,8 +17,8 @@
             .when('/characters', {
                 template: `<h1>Characters</h1>`
             })
-            .when('/specie', {
-                template: `<specie-componet></specie-componet>`
+            .when('/species', {
+                template: `<species-componet></species-componet>`
             })
             .when('/starships', {
                 template: `<star-component></star-component>`

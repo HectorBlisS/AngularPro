@@ -6,14 +6,14 @@
     }
 
     function SpecieController($http) {
-        let specie = this;
+        let species = this;
 
         $http({
-          method: 'GET',
-          url: 'http://swapi.co/api/species/'
-        }).then(function(response){
-          species.data = response.data.results;
-          console.log(specie.data)
+            method: 'GET',
+            url: 'http://swapi.co/api/species/'
+        }).then(function (response) {
+            species.data = response.data.results;
+            console.log(species.data)
         })
     }
 
