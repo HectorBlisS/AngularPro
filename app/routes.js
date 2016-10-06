@@ -16,6 +16,12 @@
             .when('/characters',{
                 template:`<h1>Characters</h1>`
             })
+            .when('/starships',{
+                template:`<star-component></star-component>`
+            })
+            .when('/films',{
+                template:`<films-component></films-component>`
+            })
             .otherwise({
                 redirectTo:('/')
             });
