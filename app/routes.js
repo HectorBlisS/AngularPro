@@ -14,7 +14,7 @@
                 template:`<planet-componet></planet-componet>`
             })
             .when('/characters',{
-                template:`<h1>Characters</h1>`
+                template:`<people-component></people-component>`
             })
             .otherwise({
                 redirectTo:('/')
