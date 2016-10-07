@@ -1,0 +1,18 @@
+<h2 ng-show="$ctrl.err">{{$ctrl.err}}</h2>
+<button ng-click="$ctrl.logIn()">Inicia Sesión con Google</button>
+
+<div ng-hide="$ctrl.user" class="emails">
+	<input type="email" required placeholder="Email" ng-model="$ctrl.email">
+	<input type="password" required placeholder="Contraseña" ng-model="$ctrl.password">
+	<button ng-click="$ctrl.loginEmial()">Entrar</button>
+</div>
+
+<h1 style="display:none;" id="loader">haciendo login...</h1>
+
+
+<div ng-show="$ctrl.user">
+	<img style="width:100px" src="{{$ctrl.user.photoURL}}">
+	<h3>{{$ctrl.user.displayName}}</h3>
+	<p>{{$ctrl.user.email}}</p>
+	<a href="#" ng-click="$ctrl.signOut()">Sign out</a>
+</div>

@@ -16,6 +16,12 @@
             .when('/characters',{
                 template:`<h1>Characters</h1>`
             })
+            .when('/login',{
+                template:`
+                    <auth-component>
+                    </auth-component>
+                `
+            })
             .otherwise({
                 redirectTo:('/')
             });
