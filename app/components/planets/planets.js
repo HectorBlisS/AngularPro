@@ -5,6 +5,7 @@
         templateUrl:'app/components/planets/planets.html'
     }
 
+<<<<<<< HEAD
     function PlanetController($firebaseAuth) {
         let planets = this;
         var auth = $firebaseAuth();
@@ -36,6 +37,18 @@
          
 
 
+=======
+    function PlanetController($http) {
+        let planets = this;
+
+        $http({
+            method: 'GET',
+            url: 'http://swapi.co/api/planets/'
+        }).then(function (response) {
+            planets.data = response.data.results;
+            console.log(planets.data)
+        })
+>>>>>>> 3aa7bcc23af8dfccdc2ab07518a1f29bc57bd606
     }
 
     angular
